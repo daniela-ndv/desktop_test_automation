@@ -4,7 +4,7 @@ Automação de testes para validar interações em interfaces de **aplicações 
 
 Como exemplo, foi utilizado o **Visual Studio Code**, desenvolvido com Electron ([Fonte↗](https://code.visualstudio.com/docs/editor/whyvscode)).
 
-**Este repositório foi baseado em [Abdulhasiib/VSCodeSelenium](https://github.com/Abdulhasiib/VSCodeSelenium.git)**
+**Este repositório é um estudo de [Abdulhasiib/VSCodeSelenium](https://github.com/Abdulhasiib/VSCodeSelenium.git)**
 
 ---
 
