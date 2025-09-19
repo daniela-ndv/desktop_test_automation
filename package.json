@@ -1,0 +1,24 @@
+{
+  "name": "vscodeselenium",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdulhasiib/VSCodeSelenium.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Abdulhasiib/VSCodeSelenium/issues"
+  },
+  "homepage": "https://github.com/Abdulhasiib/VSCodeSelenium#readme",
+  "dependencies": {
+    "selenium-webdriver": "^4.35.0"
+  }
+}

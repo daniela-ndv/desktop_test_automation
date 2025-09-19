@@ -1,9 +1,8 @@
 import pytest
 
-
 @pytest.mark.usefixtures("cef_driver_init")
 class BaseTest:
     """
-    This is the Parent class of all the test classes.
+    Esta é a classe pai de todas as classes de teste.
     """
     pass

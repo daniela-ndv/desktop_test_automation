@@ -10,18 +10,15 @@ import pytest
 @pytest.fixture(scope="class")
 def cef_driver_init(request):
     """
-    - Selenium WebDriver is initialized here for handling elements inside CEF browser.
-    ---
-    :param request:
-    :return:
+    O Selenium WebDriver é inicializado aqui para manipular elementos dentro do navegador CEF.
     """
 
-    """find an available port to start WebDriver with remote-debugging."""
+    """ Encontra uma porta disponível para iniciar o WebDriver com depuração remota. """
     port_number = GenericUtilities.find_available_port(AutoConfig.PORT_START, AutoConfig.PORT_RANGE)
     if port_number is None:
-        pytest.fail(f"no available ports in given range "
-                    f"from {AutoConfig.PORT_START} to {AutoConfig.PORT_START + AutoConfig.PORT_RANGE}. "
-                    f"WebDriver can't be initialized.")
+        pytest.fail(f"Nenhuma porta disponível no intervalo fornecido "
+                    f"de {AutoConfig.PORT_START} até {AutoConfig.PORT_START + AutoConfig.PORT_RANGE}. "
+                    f"O WebDriver não pode ser inicializado.")
 
     chrome_options = webdriver.ChromeOptions()
     chrome_options.binary_location = AppConfig.APP_PATH
@@ -34,10 +31,10 @@ def cef_driver_init(request):
 
     request.cls.cef_driver = webdriver.Chrome(service=service, options=chrome_options)
 
-    """ Implicit wait time: to wait for max 10 seconds before throwing exception. """
+    """ Tempo de espera implícito: esperar no máximo 10 segundos antes de lançar uma exceção. """
     request.cls.cef_driver.implicitly_wait(10)
 
-    """ Maximize application """
+    """ Maximizar a aplicação """
     request.cls.cef_driver.execute_script("window.moveTo(0, 0);window.resizeTo(screen.width, screen.height);")
     yield
     request.cls.cef_driver.quit()

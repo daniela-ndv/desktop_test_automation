@@ -1,11 +1,17 @@
+import os
+
 class AppConfig:
     """
-    - Configurations related to Application
+    Configurações da aplicação
     """
-    # Version of ChromeDriver corresponding to CEF version used in VS Code.
-    # To check the Chrome version, In VS Code, navigate to Help>Toggle Developer Tools and run this command in Console:
+    # Versão do ChromeDriver correspondente à versão do CEF usado no VS Code.
+    # Para verificar a versão do Chrome no VS Code, navegue até Help>Toggle Developer Tools e rode o seguinte comando no console:
     # console.log(navigator.appVersion)
-    CHROME_DRIVER_VERSION = "122.0.6261.156"
+    CHROME_DRIVER_VERSION = "138.0.7204.235"
 
-    APP_PATH = r"C:\Program Files\Microsoft VS Code\Code.exe"
+    USER_HOME = os.path.expanduser("~")
+    APP_PATH = os.path.join(
+        USER_HOME,
+        r"AppData\Local\Programs\Microsoft VS Code\Code.exe"
+    )
     APP_TITLE = "Visual Studio Code"

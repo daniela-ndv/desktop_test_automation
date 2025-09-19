@@ -1,0 +1,7 @@
+.pytest_cache/
+node_modules/
+Configuration/__pycache__/
+Tests/__pycache__/
+Utilities/__pycache__/
+venv/
+WebDriver.log

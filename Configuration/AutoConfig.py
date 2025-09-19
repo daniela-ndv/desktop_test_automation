@@ -3,7 +3,7 @@ import os
 
 class AutoConfig:
     """
-    Configuration for UI Automation Framework
+    Configuração para o framework
     """
     ROOT_DIR = os.path.dirname(os.path.dirname((os.path.abspath(__file__))))
     TESTDATA_PATH = os.path.join(ROOT_DIR, "Test Data", "config.csv")
