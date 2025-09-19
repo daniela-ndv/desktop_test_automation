@@ -1,8 +1,8 @@
-# VSCodeSelenium
+# desktop_test_automation
 
 Automação de testes para validar interações em interfaces de **aplicações desktop** que utilizam webview, utilizando **Python**, **Selenium** e **pytest**. 
 
-Como exemplo, foi utilizado o **Visual Studio Code**, desenvolvido com Electron ((Fonte↗️)[https://code.visualstudio.com/docs/editor/whyvscode]).
+Como exemplo, foi utilizado o **Visual Studio Code**, desenvolvido com Electron ([Fonte↗](https://code.visualstudio.com/docs/editor/whyvscode)).
 
 **Este repositório foi baseado em [Abdulhasiib/VSCodeSelenium](https://github.com/Abdulhasiib/VSCodeSelenium.git)**
 
